@@ -2,7 +2,7 @@ import uuid
 import logging
 import typing
 from contextlib import contextmanager
-from mixins import ThreadingMixin, ProcessingMixin, ProcessingPoolMixin
+from .mixins import ThreadingMixin, ProcessingMixin, ProcessingPoolMixin
 
 logging.basicConfig(level=logging.INFO,
                     format='\033[93m[%(process)d-%(threadName)s-%(asctime)s-%(levelname)s]:\033[0m %(message)s (%(filename)s:%(lineno)s)')
